@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Java",
+        "descripcion": "El Java es un lenguaje de programación orientado a objetos creado por James Gosling en el año 1990. Su código es muy similar al del lenguaje C y C++ con un modelo de objetos mucho más sencillo. La diferencia entre el Java y los lenguajes C y C++ es que el Java es un lenguaje de programación plenamente orientado a objetos.",
+        "urlImg": "https://www.sommelierdecafe.com/2019/wp-content/uploads/2009/06/java-logo1-1.png"
+    },
+    {
+        "nombre": "Python",
+        "descripcion": "Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis que favorezca un código legible. Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, de tipado fuerte, dinámico y multiplataforma.",
+        "urlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
+    },
+    {
+        "nombre": "C#",
+        "descripcion": "Este curso proporciona a los participantes, los conocimientos y habilidades requeridas para crear aplicaciones utilizando el lenguaje de programación C#. El curso inicia con una introducción a la estructura básica de una aplicación C# y la sintaxis del lenguaje para posteriormente describir las distintas características proporcionadas por el .NET Framework, así como las técnicas y tecnologías empleadas para desarrollar aplicaciones de escritorio y empresariales.",
+        "urlImg": "https://cdn.auth0.com/blog/native-csharp/logo.png"
+    },
+    {
+        "nombre": "C++",
+        "descripcion": "C++ es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, el C++ es un lenguaje híbrido.",
+        "urlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/911px-ISO_C%2B%2B_Logo.svg.png"
+    },
+    {
+        "nombre": "C",
+        "descripcion": "C es un lenguaje de programación de propósito general2​:1 originalmente desarrollado por Dennis Ritchie entre 1969 y 1972 en los Laboratorios Bell, como evolución bibliotecas y macros. Por ejemplo, la implementación original de C++ consistía en un preprocesador que traducía código fuente C++ a C. La mayoría de las funciones orientadas a objetos incluyen un puntero especial, que normalmente recibe el nombre 'this', que se refiere al objeto al que pertenece la función. Mediante el paso de este puntero como un argumento de función, esta funcionalidad puede desempeñarse en C.",
+        "urlImg": "http://pm1.narvii.com/6242/062eb5a01777445a357826b998f14b9785e7442a_00.jpg"
+    },
+    {
+        "nombre": "Ruby",
+        "descripcion": "Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés Yukihiro 'Matz' Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995. Combina una sintaxis inspirada en Python y Perl con características de programación orientada a objetos similares a Smalltalk. Comparte también funcionalidad con otros lenguajes de programación como Lisp, Lua, Dylan y CLU. Ruby es un lenguaje de programación interpretado en una sola pasada y su implementación oficial es distribuida bajo una licencia de software libre.",
+        "urlImg": "https://i2.wp.com/blog.mwpreston.net/wp-content/uploads/2018/09/ruby-logo.png?ssl=1"
+    }
+]

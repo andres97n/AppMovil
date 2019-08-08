@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="warning">
+
+    <ion-buttons>
+      <ion-back-button slot="start" defaultHref="/home"></ion-back-button>
+      <ion-title><h2><strong>Categorías </strong> </h2></ion-title>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let item of categorias">
+
+      <ion-card-header>
+
+          <ion-title>
+            <h2 class="nombre"><strong>{{item.nombre}}</strong></h2>
+            
+          </ion-title>
+        </ion-card-header>
+
+    <ion-img src="{{item.imagenUrl}}"></ion-img>
+
+
+    
+
+    <ion-card-content>
+      <p>{{item.descripcion}}</p>
+      <ion-button color="warning" expand="block" (click)="onClick(item)">Ver Lenguajes</ion-button>
+    </ion-card-content>
+
+
+
+  </ion-card>
+
+
+</ion-content>

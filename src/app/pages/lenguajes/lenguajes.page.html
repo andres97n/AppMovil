@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons>
+      <ion-back-button slot="start" defaultHref="/categorias"></ion-back-button>
+      <ion-title><h2><strong>{{titulo}}</strong></h2></ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-title>
+      <h3>Lenguajes de {{titulo}}</h3>
+    </ion-title>
+  </ion-item>
+
+
+
+  <ion-card *ngFor="let lenguaje of lenguajes">
+
+      <ion-card-header>
+          <ion-title class="titulo"><h2><strong>{{lenguaje.nombre}}</strong> </h2></ion-title>
+        </ion-card-header>
+
+    <ion-item>
+      <ion-img src="{{lenguaje.urlImg}}"></ion-img>
+    </ion-item>
+
+    
+
+    <ion-card-content>
+      <p>
+        {{lenguaje.descripcion}}
+      </p>
+
+      <ion-button color="warning" expand="block" (click)="onClick(lenguaje)">Ver Curso</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+
+
+
+
+</ion-content>

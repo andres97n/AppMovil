@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons>
+      <ion-back-button slot="start" defaultHref="/categorias"></ion-back-button>
+      <ion-title><h2><strong>{{titulo}}</strong></h2></ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+
+
+  <ion-card *ngFor="let item of cursos">
+
+    <ion-item>
+      <ion-title class="nombre"><h2>{{item.nombre}}</h2></ion-title>
+    </ion-item>
+
+
+    <ion-card-content>
+      <ion-img src="{{item.urlThumbnail}}"></ion-img>
+    </ion-card-content>
+
+    <ion-card-content>
+      <a href="{{item.urlVideo}}" target="_blank">
+        <ion-button color="warning" expand="block">Ir Al Curso</ion-button>
+      </a>
+    </ion-card-content>
+
+    
+
+  </ion-card>
+
+
+
+</ion-content>
