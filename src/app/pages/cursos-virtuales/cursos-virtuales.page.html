@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="warning">
+
+    <ion-buttons>
+      <ion-back-button slot="start" defaultHref="/home"></ion-back-button>
+      <ion-title>
+        <h2><strong>Cursos Virtuales </strong> </h2>
+      </ion-title>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content><br><br>
+
+  <ion-card *ngFor="let curso of cursos">
+    <ion-card-header>
+      <ion-card-subtitle style="font-size: 20px"> {{ curso.nombre }} </ion-card-subtitle>
+      <ion-card-title>{{ curso.duracion }} Horas</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Número de Cupos: {{ curso.numeroCupos }}
+    </ion-card-content>
+    <ion-card-content>
+      Fecha de Inicio: {{ curso.fechaInicio }}
+    </ion-card-content>
+    <ion-card-content>
+      Fecha de Fin: {{ curso.fechaFin }}
+    </ion-card-content>
+    <ion-card-content>
+      Docente Encagardo: {{ curso.docente.persona.primerNombre}} {{curso.docente.persona.primerApellido }}
+    </ion-card-content>
+    <ion-card-content>
+        Responsable Encargado: {{ curso.responsable.persona.primerNombre}} {{curso.responsable.persona.primerApellido }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

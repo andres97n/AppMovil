@@ -13,15 +13,20 @@ export class HomePage implements OnInit {
 
   constructor(
     public router: Router,
-    private cursosSrv: CursosService
+    //private cursosSrv: CursosService
   ) { }
 
-  async ngOnInit() {
-    this.cursos = await this.cursosSrv.getCursosIsta()
+  ngOnInit() {
+    //this.cursos = await this.cursosSrv.getCursosIsta()
   }
 
   irAlInicio() {
     this.router.navigate(['categorias'])
+  }
+
+  cursosVirtuales(){
+
+    this.router.navigate(['cursos-virtuales']);
   }
 
 }

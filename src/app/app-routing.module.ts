@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: 'categorias', loadChildren: './pages/categorias/categorias.module#CategoriasPageModule' },
   { path: 'lenguajes', loadChildren: './pages/lenguajes/lenguajes.module#LeguajesPageModule' },
   { path: 'cursos', loadChildren: './pages/cursos/cursos.module#CursosPageModule' },
+  { path: 'cursos-virtuales', loadChildren: './pages/cursos-virtuales/cursos-virtuales.module#CursosVirtualesPageModule' },
+
 ];
 
 @NgModule({
