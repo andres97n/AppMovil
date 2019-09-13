@@ -1,26 +1,43 @@
 <ion-header>
   <ion-toolbar color="warning">
-      <ion-img slot="start" src="./assets/icon/logo.png"></ion-img>
+    <ion-img slot="start" src="./assets/icon/logo.png"></ion-img>
     <ion-title>
-      <strong><h1><strong>ISTA</strong> </h1></strong>
-      
+      <strong>
+        <h1><strong>ISTA</strong> </h1>
+      </strong>
+
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="secondary" padding>
 
-  
-  
+
+
   <ion-item>
-      <ion-img class="logo" slot="start" src="./assets/icon/app.png"></ion-img>
+    <ion-img class="logo" slot="start" src="./assets/icon/app.png"></ion-img>
   </ion-item>
 
   <ion-item>
-      <p>Es una aplicación enfocada para estudiantes y para personas que deseen aprender lenguajes de programación variados, en donde su principal función es ampliar sus conocimientos a través de cursos de apoyo.
-          Los diferentes cursos están organizados en categorías, en las que están a disposición de los usuarios
-          </p>
+    <p>Es una aplicación enfocada para estudiantes y para personas que deseen aprender lenguajes de programación
+      variados, en donde su principal función es ampliar sus conocimientos a través de cursos de apoyo.
+      Los diferentes cursos están organizados en categorías, en las que están a disposición de los usuarios
+    </p>
+
   </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let curso of cursos">
+
+      <ion-label> {{curso.nombre}}</ion-label>
+      <ion-label> {{curso.duracion}}</ion-label>
+      <ion-label> {{curso.numeroCupos}}</ion-label>
+      <ion-label> {{curso.fechaInicio}}</ion-label>
+      <ion-label> {{curso.fechaFin}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+
 
   <ion-button color="light" expand="block" (click)="irAlInicio()">VER CATEGORÍAS</ion-button>
 

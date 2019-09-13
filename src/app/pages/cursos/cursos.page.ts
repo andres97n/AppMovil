@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CursosService } from 'src/app/services/cursos.service';
 import { Curso } from 'src/app/interfaces/Curso';
-import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 
 @Component({
   selector: 'app-cursos',
@@ -16,14 +15,14 @@ export class CursosPage implements OnInit {
   public cursos: Curso[];
 
 
-  constructor(public router: Router, 
+  constructor(public router: Router,
     public cursosServ: CursosService) {
     try {
       this.titulo = this.router.getCurrentNavigation().extras.state.lenguaje.nombre
     } catch (error) {
 
     }
-  
+
   }
 
   ngOnInit() {
@@ -37,5 +36,5 @@ export class CursosPage implements OnInit {
 
 
 
-  
+
 }
