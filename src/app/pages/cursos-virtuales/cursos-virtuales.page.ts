@@ -15,8 +15,15 @@ export class CursosVirtualesPage implements OnInit {
   }
 
   async ngOnInit() {
-    this.cursos = await this.cursosSrv.getCursosIsta()
+    this.cursos = await this.cursosSrv.getCursosIsta();
   }
   
+  async doRefresh(refresher){
+    this.cursos = await this.cursosSrv.getCursosIsta();
+    // setTimeout(() => {
+      refresher.target.complete();
+    // }, 2000);
+    
+  }
 
 }

@@ -77,7 +77,8 @@ export class CursosService {
 
   public async getCursosIsta() {
     const query = await this.apollo.query({
-      query: QUERY_CURSOS_VIRTUALES
+      query: QUERY_CURSOS_VIRTUALES,
+      fetchPolicy: 'network-only'
     })
 
     const result = (await query.toPromise()).data['cursosVirtuales']
